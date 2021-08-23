@@ -6070,9 +6070,21 @@ This server accepts configuration via the `settings` key.
   
   null
 
+- **`Lua.completion.requireSeparator`**: `string`
+
+  Default: `"."`
+  
+  null
+
 - **`Lua.completion.showParams`**: `boolean`
 
   Default: `true`
+  
+  null
+
+- **`Lua.completion.showWord`**: `enum { "Enable", "Fallback", "Disable" }`
+
+  Default: `"Enable"`
   
   null
 
@@ -6100,6 +6112,18 @@ This server accepts configuration via the `settings` key.
   
   null
 
+- **`Lua.diagnostics.ignoredFiles`**: `enum { "Enable", "Opened", "Disable" }`
+
+  Default: `"Disable"`
+  
+  null
+
+- **`Lua.diagnostics.libraryFiles`**: `enum { "Enable", "Opened", "Disable" }`
+
+  Default: `"Disable"`
+  
+  null
+
 - **`Lua.diagnostics.neededFileStatus`**: `object`
 
   null
@@ -6124,9 +6148,9 @@ This server accepts configuration via the `settings` key.
 
   null
 
-- **`Lua.hint.paramName`**: `boolean`
+- **`Lua.hint.paramName`**: `enum { "All", "Literal", "Disable" }`
 
-  Default: `true`
+  Default: `"All"`
   
   null
 
